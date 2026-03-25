@@ -1,0 +1,32 @@
+# courses.yaml
+# ─────────────────────────────────────────────────────────────────
+# Add one entry per course. Each entry needs:
+#
+#   file:   the CSV filename inside the courses/ folder
+#   title:  the display title shown on the calendar page
+#   start:  first day of class (any common date format)
+#           This anchors "week1 mon" etc. to real dates.
+#           Update this each semester — everything else stays the same.
+#
+# The calendar for each course will be published at:
+#   https://<your-username>.github.io/<your-repo>/<file-without-.csv>/
+#
+# Example: file: physics101.csv  →  .../physics101/index.html
+# ─────────────────────────────────────────────────────────────────
+
+courses:
+  - file:  ap_physics_1.csv
+    title: AP Physics 1
+    start: 8/31/26
+
+  - file:  ap_physics_c_mechanics.csv
+    title: AP Physics C: Mechanics
+    start: 3/8/27
+
+  - file:  physics_a.csv
+    title: Physics A
+    start: 8/31/26
+
+  - file:  physics_b.csv
+    title: Physics B
+    start: 3/8/27
