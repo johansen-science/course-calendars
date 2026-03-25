@@ -1,0 +1,46 @@
+name: Build and publish calendars
+
+on:
+  push:
+    branches: [main]          # run on every push to main
+  workflow_dispatch:           # also allow manual trigger from GitHub UI
+
+# Allow the workflow to write to the repo (needed to push docs/)
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check out the repository
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      # 4. Build all calendars
+      - name: Build calendars
+        run: python build_all.py
+
+      # 5. Commit the generated docs/ folder back to the repo
+      #    GitHub Pages will then serve it automatically
+      - name: Commit generated site
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          # Only commit if there are actual changes
+          git diff --cached --quiet || git commit -m "Rebuild calendars [skip ci]"
+          git push
