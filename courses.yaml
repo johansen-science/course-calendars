@@ -16,17 +16,17 @@
 
 courses:
   - file:  ap_physics_1.csv
-    title: AP Physics 1
+    title: "AP Physics 1"
     start: "8/31/26"
 
   - file:  ap_physics_c_mechanics.csv
-    title: AP Physics C: Mechanics
+    title: "AP Physics C: Mechanics"
     start: "3/8/27"
 
   - file:  physics_a.csv
-    title: Physics A
+    title: "Physics A"
     start: "8/31/26"
 
   - file:  physics_b.csv
-    title: Physics B
+    title: "Physics B"
     start: "3/8/27"
