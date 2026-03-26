@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics B</title>
+  <style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.5;color:#1a1a2e;background:#f5f6fa;padding:1.5rem 1rem}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+header{background:#2c3e50;color:#fff;padding:1.25rem 1.5rem;border-radius:8px;margin-bottom:2rem}
+header h1{font-size:1.6rem;font-weight:700}
+header p{font-size:.9rem;opacity:.75;margin-top:.25rem}
+.back-link{display:inline-block;margin-bottom:1.5rem;font-size:.9rem;color:#2980b9;text-decoration:none}
+.back-link:hover{text-decoration:underline}
+.legend{display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:2rem;font-size:.85rem}
+.legend-item{display:flex;align-items:center;gap:.4rem}
+.legend-swatch{width:1rem;height:1rem;border-radius:3px;border:1px solid rgba(0,0,0,.15);flex-shrink:0}
+section{background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.08);margin-bottom:2.5rem;overflow:hidden}
+section h2{background:#2c3e50;color:#fff;font-size:1.15rem;padding:.75rem 1.25rem}
+table{width:100%;border-collapse:collapse;table-layout:fixed}
+thead th{background:#5d6d7e;color:#fff;font-size:.8rem;font-weight:600;text-align:center;padding:.4rem 0;letter-spacing:.03em}
+thead th abbr{text-decoration:none;cursor:default}
+thead th.weekend-header{background:#4a5568}
+td{vertical-align:top;border:1px solid #d1d5db;padding:.35rem .4rem;height:6rem;background:#fff}
+td.empty{background:#eaecee}
+td.weekend{background:#f7f8f9}
+td.no-class{background:#fff0ee}
+td.exam{background:#fff8ee}
+.day-num{display:block;font-size:.8rem;font-weight:700;color:#2c3e50;margin-bottom:.2rem}
+.lesson{font-size:.72rem;line-height:1.35;color:#1a252f;margin-bottom:.15rem}
+p.notes{font-size:.65rem;color:#5d6d7e;font-style:italic;line-height:1.3}
+ul.notes{font-size:.65rem;color:#5d6d7e;font-style:italic;line-height:1.35;padding-left:1rem;margin-top:.1rem}
+td:focus,a:focus,button:focus{outline:3px solid #2980b9;outline-offset:2px}
+@media(max-width:700px){td{height:auto;min-height:3.5rem}.lesson{font-size:.65rem}p.notes,ul.notes{font-size:.6rem}}
+@media print{body{background:#fff;padding:0;font-size:11px}header{border-radius:0}section{box-shadow:none;page-break-after:always}td{height:5rem}}
+</style>
+</head>
+<body>
+  <a class="sr-only" href="#main-content">Skip to main content</a>
+  <header role="banner">
+    <h1>Physics B</h1>
+    <p>Updated March 26, 2026</p>
+  </header>
+  <a class="back-link" href="../">← All courses</a>
+  
+<nav aria-label="Calendar legend">
+  <ul class="legend" role="list">
+    <li class="legend-item">
+      <span class="legend-swatch" style="background:#fff0ee" aria-hidden="true"></span>
+      No class / Holiday / Break
+    </li>
+    <li class="legend-item">
+      <span class="legend-swatch" style="background:#fff8ee" aria-hidden="true"></span>
+      Quiz / Test / Final
+    </li>
+  </ul>
+</nav>
+
+  <main id="main-content">
+    
+<section aria-labelledby="month-2027-03">
+  <h2 id="month-2027-03">March 2027</h2>
+  <table role="grid" aria-labelledby="month-2027-03">
+    <caption class="sr-only">March 2027 class schedule</caption>
+    <thead><tr><th scope="col" class="weekend-header"><abbr title="Sunday">Sun</abbr></th>
+<th scope="col"><abbr title="Monday">Mon</abbr></th>
+<th scope="col"><abbr title="Tuesday">Tue</abbr></th>
+<th scope="col"><abbr title="Wednesday">Wed</abbr></th>
+<th scope="col"><abbr title="Thursday">Thu</abbr></th>
+<th scope="col"><abbr title="Friday">Fri</abbr></th>
+<th scope="col" class="weekend-header"><abbr title="Saturday">Sat</abbr></th>
+</tr></thead>
+    <tbody><tr>
+<td class="empty" aria-hidden="true"></td>
+<td aria-label="Monday, March 1, 2027">
+<span class="day-num" aria-hidden="true">1</span>
+</td>
+<td aria-label="Tuesday, March 2, 2027">
+<span class="day-num" aria-hidden="true">2</span>
+</td>
+<td aria-label="Wednesday, March 3, 2027">
+<span class="day-num" aria-hidden="true">3</span>
+</td>
+<td aria-label="Thursday, March 4, 2027">
+<span class="day-num" aria-hidden="true">4</span>
+</td>
+<td aria-label="Friday, March 5, 2027">
+<span class="day-num" aria-hidden="true">5</span>
+</td>
+<td class="weekend" aria-label="Saturday, March 6, 2027">
+<span class="day-num" aria-hidden="true">6</span>
+</td>
+</tr>
+<tr>
+<td class="weekend" aria-label="Sunday, March 7, 2027">
+<span class="day-num" aria-hidden="true">7</span>
+</td>
+<td class="lesson" aria-label="Monday, March 8, 2027">
+<span class="day-num" aria-hidden="true">8</span>
+<p class="lesson">Introduction to Thermodynamics</p>
+<p class="notes">Read ch. 1</p>
+</td>
+<td aria-label="Tuesday, March 9, 2027">
+<span class="day-num" aria-hidden="true">9</span>
+</td>
+<td class="lesson" aria-label="Wednesday, March 10, 2027">
+<span class="day-num" aria-hidden="true">10</span>
+<p class="lesson">Temperature and Heat</p>
+</td>
+<td aria-label="Thursday, March 11, 2027">
+<span class="day-num" aria-hidden="true">11</span>
+</td>
+<td class="lesson" aria-label="Friday, March 12, 2027">
+<span class="day-num" aria-hidden="true">12</span>
+<p class="lesson">Thermal Expansion</p>
+<p class="notes">HW 1 due</p>
+</td>
+<td class="weekend" aria-label="Saturday, March 13, 2027">
+<span class="day-num" aria-hidden="true">13</span>
+</td>
+</tr>
+<tr>
+<td class="weekend" aria-label="Sunday, March 14, 2027">
+<span class="day-num" aria-hidden="true">14</span>
+</td>
+<td class="lesson" aria-label="Monday, March 15, 2027">
+<span class="day-num" aria-hidden="true">15</span>
+<p class="lesson">Ideal Gas Law</p>
+</td>
+<td aria-label="Tuesday, March 16, 2027">
+<span class="day-num" aria-hidden="true">16</span>
+</td>
+<td class="lesson" aria-label="Wednesday, March 17, 2027">
+<span class="day-num" aria-hidden="true">17</span>
+<p class="lesson">Kinetic Theory of Gases</p>
+</td>
+<td aria-label="Thursday, March 18, 2027">
+<span class="day-num" aria-hidden="true">18</span>
+</td>
+<td class="lesson" aria-label="Friday, March 19, 2027">
+<span class="day-num" aria-hidden="true">19</span>
+<p class="lesson">Heat Transfer</p>
+<p class="notes">HW 2 due</p>
+</td>
+<td class="weekend" aria-label="Saturday, March 20, 2027">
+<span class="day-num" aria-hidden="true">20</span>
+</td>
+</tr>
+<tr>
+<td class="weekend" aria-label="Sunday, March 21, 2027">
+<span class="day-num" aria-hidden="true">21</span>
+</td>
+<td class="lesson" aria-label="Monday, March 22, 2027">
+<span class="day-num" aria-hidden="true">22</span>
+<p class="lesson">Review Session</p>
+</td>
+<td aria-label="Tuesday, March 23, 2027">
+<span class="day-num" aria-hidden="true">23</span>
+</td>
+<td class="exam" aria-label="Wednesday, March 24, 2027, Quiz or test">
+<span class="day-num" aria-hidden="true">24</span>
+<p class="lesson">Quiz 1</p>
+<p class="notes">Covers ch. 1-3</p>
+</td>
+<td aria-label="Thursday, March 25, 2027">
+<span class="day-num" aria-hidden="true">25</span>
+</td>
+<td class="lesson" aria-label="Friday, March 26, 2027">
+<span class="day-num" aria-hidden="true">26</span>
+<p class="lesson">First Law of Thermodynamics</p>
+</td>
+<td class="weekend" aria-label="Saturday, March 27, 2027">
+<span class="day-num" aria-hidden="true">27</span>
+</td>
+</tr>
+<tr>
+<td class="weekend" aria-label="Sunday, March 28, 2027">
+<span class="day-num" aria-hidden="true">28</span>
+</td>
+<td class="no-class" aria-label="Monday, March 29, 2027, No class">
+<span class="day-num" aria-hidden="true">29</span>
+<p class="lesson">NO CLASS</p>
+<p class="notes">Labor Day</p>
+</td>
+<td aria-label="Tuesday, March 30, 2027">
+<span class="day-num" aria-hidden="true">30</span>
+</td>
+<td class="lesson" aria-label="Wednesday, March 31, 2027">
+<span class="day-num" aria-hidden="true">31</span>
+<p class="lesson">Internal Energy</p>
+</td>
+<td class="empty" aria-hidden="true"></td>
+<td class="empty" aria-hidden="true"></td>
+<td class="empty" aria-hidden="true"></td>
+</tr>
+</tbody>
+  </table>
+</section>
+
+<section aria-labelledby="month-2027-04">
+  <h2 id="month-2027-04">April 2027</h2>
+  <table role="grid" aria-labelledby="month-2027-04">
+    <caption class="sr-only">April 2027 class schedule</caption>
+    <thead><tr><th scope="col" class="weekend-header"><abbr title="Sunday">Sun</abbr></th>
+<th scope="col"><abbr title="Monday">Mon</abbr></th>
+<th scope="col"><abbr title="Tuesday">Tue</abbr></th>
+<th scope="col"><abbr title="Wednesday">Wed</abbr></th>
+<th scope="col"><abbr title="Thursday">Thu</abbr></th>
+<th scope="col"><abbr title="Friday">Fri</abbr></th>
+<th scope="col" class="weekend-header"><abbr title="Saturday">Sat</abbr></th>
+</tr></thead>
+    <tbody><tr>
+<td class="empty" aria-hidden="true"></td>
+<td class="empty" aria-hidden="true"></td>
+<td class="empty" aria-hidden="true"></td>
+<td class="empty" aria-hidden="true"></td>
+<td aria-label="Thursday, April 1, 2027">
+<span class="day-num" aria-hidden="true">1</span>
+</td>
+<td class="lesson" aria-label="Friday, April 2, 2027">
+<span class="day-num" aria-hidden="true">2</span>
+<p class="lesson">Enthalpy</p>
+<p class="notes">HW 3 due</p>
+</td>
+<td class="weekend" aria-label="Saturday, April 3, 2027">
+<span class="day-num" aria-hidden="true">3</span>
+</td>
+</tr>
+<tr>
+<td class="weekend" aria-label="Sunday, April 4, 2027">
+<span class="day-num" aria-hidden="true">4</span>
+</td>
+<td class="lesson" aria-label="Monday, April 5, 2027">
+<span class="day-num" aria-hidden="true">5</span>
+<p class="lesson">Second Law of Thermodynamics</p>
+</td>
+<td aria-label="Tuesday, April 6, 2027">
+<span class="day-num" aria-hidden="true">6</span>
+</td>
+<td class="lesson" aria-label="Wednesday, April 7, 2027">
+<span class="day-num" aria-hidden="true">7</span>
+<p class="lesson">Entropy</p>
+</td>
+<td aria-label="Thursday, April 8, 2027">
+<span class="day-num" aria-hidden="true">8</span>
+</td>
+<td class="lesson" aria-label="Friday, April 9, 2027">
+<span class="day-num" aria-hidden="true">9</span>
+<p class="lesson">Carnot Cycle</p>
+<p class="notes">HW 4 due</p>
+</td>
+<td class="weekend" aria-label="Saturday, April 10, 2027">
+<span class="day-num" aria-hidden="true">10</span>
+</td>
+</tr>
+<tr>
+<td class="weekend" aria-label="Sunday, April 11, 2027">
+<span class="day-num" aria-hidden="true">11</span>
+</td>
+<td aria-label="Monday, April 12, 2027">
+<span class="day-num" aria-hidden="true">12</span>
+</td>
+<td aria-label="Tuesday, April 13, 2027">
+<span class="day-num" aria-hidden="true">13</span>
+</td>
+<td aria-label="Wednesday, April 14, 2027">
+<span class="day-num" aria-hidden="true">14</span>
+</td>
+<td aria-label="Thursday, April 15, 2027">
+<span class="day-num" aria-hidden="true">15</span>
+</td>
+<td aria-label="Friday, April 16, 2027">
+<span class="day-num" aria-hidden="true">16</span>
+</td>
+<td class="weekend" aria-label="Saturday, April 17, 2027">
+<span class="day-num" aria-hidden="true">17</span>
+</td>
+</tr>
+<tr>
+<td class="weekend" aria-label="Sunday, April 18, 2027">
+<span class="day-num" aria-hidden="true">18</span>
+</td>
+<td aria-label="Monday, April 19, 2027">
+<span class="day-num" aria-hidden="true">19</span>
+</td>
+<td aria-label="Tuesday, April 20, 2027">
+<span class="day-num" aria-hidden="true">20</span>
+</td>
+<td aria-label="Wednesday, April 21, 2027">
+<span class="day-num" aria-hidden="true">21</span>
+</td>
+<td aria-label="Thursday, April 22, 2027">
+<span class="day-num" aria-hidden="true">22</span>
+</td>
+<td aria-label="Friday, April 23, 2027">
+<span class="day-num" aria-hidden="true">23</span>
+</td>
+<td class="weekend" aria-label="Saturday, April 24, 2027">
+<span class="day-num" aria-hidden="true">24</span>
+</td>
+</tr>
+<tr>
+<td class="weekend" aria-label="Sunday, April 25, 2027">
+<span class="day-num" aria-hidden="true">25</span>
+</td>
+<td aria-label="Monday, April 26, 2027">
+<span class="day-num" aria-hidden="true">26</span>
+</td>
+<td aria-label="Tuesday, April 27, 2027">
+<span class="day-num" aria-hidden="true">27</span>
+</td>
+<td aria-label="Wednesday, April 28, 2027">
+<span class="day-num" aria-hidden="true">28</span>
+</td>
+<td aria-label="Thursday, April 29, 2027">
+<span class="day-num" aria-hidden="true">29</span>
+</td>
+<td aria-label="Friday, April 30, 2027">
+<span class="day-num" aria-hidden="true">30</span>
+</td>
+<td class="empty" aria-hidden="true"></td>
+</tr>
+</tbody>
+  </table>
+</section>
+
+  </main>
+</body>
+</html>
